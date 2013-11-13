@@ -10,6 +10,8 @@ Blog::Application.routes.draw do
 
   root 'welcome#index'
 
+  match '/posts', to: 'static_pages#posts', via: 'get'
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
